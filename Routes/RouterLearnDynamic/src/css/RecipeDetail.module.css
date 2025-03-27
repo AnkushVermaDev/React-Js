@@ -1,0 +1,13 @@
+.Page{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.DetailFood{
+    margin-left: 50px;
+}
