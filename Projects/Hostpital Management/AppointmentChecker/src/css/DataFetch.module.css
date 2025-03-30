@@ -1,0 +1,24 @@
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container{
+    margin-top: 50px;
+    width: 290px;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 5px;
+}
+
+img{
+    width: 100px;
+    border-radius: 10px;
+}
