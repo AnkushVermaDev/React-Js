@@ -1,0 +1,46 @@
+/* Container for the toggle button */
+.container {
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    background-color: #ddd;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Ball inside the switch */
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    left: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Light Mode Styles */
+html[theme-setting="lightMode"] {
+    background-color: white;
+    color: black;
+}
+
+/* Dark Mode Styles */
+html[theme-setting="darkMode"] {
+    background-color: black;
+    color: white;
+}
+
+/* Move the ball for dark mode */
+html[theme-setting="darkMode"] .ball {
+    
+    transform: translateX(40px);
+    background-color: rgb(238, 255, 0);
+
+    border: 2px solid black;
+    
+}
