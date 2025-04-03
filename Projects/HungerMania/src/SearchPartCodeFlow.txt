@@ -1,0 +1,15 @@
+In your project, the SearchContext.js file creates a context using createContext(). This context is like a global data box that can store and share data between components without prop drilling. In App.js, you wrap your entire app inside the SearchContext.Provider and give it the value={{ userSearch, setUserSearch }}. This means whatever components are inside App.js (like Header, Home, FetchingHome) can access this data.
+
+In Header.jsx, you import the context and use setUserSearch from the context to update the search value whenever the user types something in the <input>. Since setUserSearch is directly updating the state defined in App.js, the updated userSearch value automatically flows down to any component consuming the context. For example, FetchingHome.jsx consumes this updated userSearch value using useContext(SearchContext) and filters the data based on that search input.
+
+So yes, the flow is:
+
+SearchContext.js creates context ✅
+
+App.js provides the context with state ✅
+
+Header.jsx updates the context value ✅
+
+FetchingHome.jsx reads the updated value and filters ✅
+
+That’s why any change in the search bar reflects automatically wherever the context is consumed 🔄.

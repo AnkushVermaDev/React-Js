@@ -1,0 +1,52 @@
+.Maincontainer {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;        /* Allow items to wrap */
+    gap: 20px;               /* Space between cards */
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+.foodpage {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.foodpage:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Lift effect */
+}
+
+.foodpage img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;      /* Keeps image proportion */
+}
+
+.foodpage h2 {
+    font-size: 18px;
+    margin: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.foodpage button {
+    padding: 10px 20px;
+    background-color: #ff5a5f; /* Zomato-like red */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 40%;    
+    margin-bottom: 20px;
+}
+
+.foodpage button:hover {
+    background-color: #e14b4f;
+}

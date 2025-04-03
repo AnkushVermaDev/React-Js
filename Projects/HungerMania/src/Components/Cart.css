@@ -1,0 +1,139 @@
+.cart-container {
+    max-width: 1100px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+  
+  .cart-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cart-item img {
+    width: 160px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .cart-details {
+    flex: 1;
+    margin-left: 25px;
+  }
+  
+  .cart-details h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .cart-details p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .cart-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff5722;
+  }
+  
+  .buy-btn {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0px;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: auto;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  .empty-cart {
+    text-align: center;
+    padding: 50px;
+    font-size: 24px;
+    color: #888;
+  }
+  
+
+  .removeitembtn{
+    background-color: rgb(255, 63, 63);
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+ 
+
+  .payment input{
+    width: 150px;
+  }
+
+  .payment button{
+    width: 100px;
+    height: 27px;
+    border-radius: 10px;
+    background-color: greenyellow;
+  }
+
+  .payment {
+    position: fixed;
+    left: 0;
+    
+    top: 70px;
+    background-color: black;
+    color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    gap: 20px;
+    height: 400px;
+    animation: showtopay 1.2s ease-in-out forwards ;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+
+  }
+  
+  @keyframes showtopay {
+    0% {
+      transform: translateX(-500px); /* Start outside the right */
+    }
+    100% {
+      transform: translateX(0); /* End at original position */
+    }
+  }
+  
